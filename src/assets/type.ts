@@ -17,3 +17,25 @@ export interface TrandingVideos {
   img:string;
   oscr:string;
 }
+
+
+export interface PostType {
+  username: string;
+  postsimg:{
+    img:string;
+  }[];
+  desc: string;
+  shared: number;
+  time:string;
+  deslike:number;
+  likes: number;
+  profileimg:string;
+  followers:number;
+
+  comments: {
+    comment: string;
+    username: string;
+    img: string;
+    time: string;
+  }[];
+}

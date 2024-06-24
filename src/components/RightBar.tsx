@@ -6,7 +6,7 @@ import { Tranddings,TrandingVideos } from "../assets/type";
 const RightBar = () => {
 
   return (
-    <div className="min-w-[350px] py-5 px-2 h-screen overflow-auto">
+    <div className="min-w-[350px] 2xl:min-w-[450px] py-5 px-2 h-screen overflow-auto">
       <div className="my-5">
         <input
           type="text"

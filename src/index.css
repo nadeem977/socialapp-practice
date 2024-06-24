@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body{
-    background-color: #f8f8f8;
     font-family: "Space Grotesk", sans-serif;
 }
 
@@ -14,11 +13,24 @@ body{
 .trandbox{
     box-shadow: 0px 7px 21px 0px #0000000D;
 }
-.selects option{
-    background-color: transparent;
-    color: #1CAC19;
-    border: none;
+.selecter{
+    border-radius: 50px !important;
 }
-.selects option:hover{
-    background-color: transparent !important;;
+ 
+.shados{
+    box-shadow: 0px 7px 21px 0px #0000000D;
+}
+
+.heighttset{
+    height: calc(100vh  - 115px);
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: green;
+    width: 7px;
+    border-radius: 50px;
 }

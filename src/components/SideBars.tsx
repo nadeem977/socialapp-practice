@@ -11,7 +11,7 @@ const SideBars: React.FC = () => {
   const [activebtn, setActivebtn] = useState<number>(0);
 
   return (
-    <div className="h-screen overflow-auto p-3 min-w-[280px] w-[280px] pb-5 bg-white">
+    <div className="h-screen overflow-auto p-3 min-w-[280px] 2xl:min-w-[350px] pb-5 bg-white shados">
       <div className="flex items-center justify-center my-[2rem]">
         <MainLogo />
       </div>
@@ -19,8 +19,7 @@ const SideBars: React.FC = () => {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3MNPgAEEjF2phJFIgyTwRBQFZmn9VNKVaA&s"
           alt="image"
-          className="w-[50px] h-[50px] rounded-full object-cover"
-        />
+          className="w-[50px] h-[50px] rounded-full object-cover"/>
         <div>
           <h1 className="font-bold text-[18px] mt-2 leading-[20px]">John Doe</h1>
           <p className="text-[#BCBCBC]">1.90K Followers</p>
