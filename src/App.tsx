@@ -1,15 +1,22 @@
 
+
 import Feed from "./pages/Feed";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
+
+
+
+
   return (
     <>
-      <BrowserRouter>
+     <main className="bg-white dark:bg-black">
+     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Feed />} />
         </Routes>
       </BrowserRouter>
+     </main>
     </>
   );
 };
