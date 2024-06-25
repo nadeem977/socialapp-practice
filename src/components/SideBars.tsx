@@ -41,6 +41,7 @@ const SideBars: React.FC = () => {
         ))}
       </div>
       <button className="w-full rounded-full py-3 bg-[#1CAC19] text-white mt-10">Make a post</button>
+      <Link to='/sign-in'><button className="w-full rounded-full py-3 bg-[#1CAC19] text-white mt-5">Login</button></Link>
     </div>
   );
 };
