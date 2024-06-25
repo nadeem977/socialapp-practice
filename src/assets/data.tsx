@@ -9,7 +9,10 @@ import { IoPersonOutline } from "react-icons/io5";
 import { BsSend } from "react-icons/bs";
 import { IoSettingsOutline } from "react-icons/io5";
 import { PostType } from "./type";
-
+import { PiShareFatLight } from "react-icons/pi";
+import { MdOutlineEdit } from "react-icons/md";
+import { GoShareAndroid } from "react-icons/go";
+import { FaLink } from "react-icons/fa6";
 
 
 export const SidebarData = [
@@ -154,3 +157,23 @@ export const postsdata: PostType[]  = [
          postsimg:[]
        },
 ]
+
+
+export const optionsmenu = [
+    {
+     option:"Share",
+     icon:<PiShareFatLight />,
+    },{
+      option:"Quote Scribbe",
+      icon:<MdOutlineEdit />,
+    },
+    {
+      option:"Share via",
+      icon:<GoShareAndroid />,
+    },
+    {
+      option:"Copy Post URL",
+      icon:<FaLink />,
+    },
+  ];
+  

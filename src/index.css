@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body{
     font-family: "Space Grotesk", sans-serif;
+    background-color: #F8F8F8;
 }
 
 .trandshado{
@@ -16,11 +17,24 @@ body{
 .selecter{
     border-radius: 50px !important;
 }
- 
+.welcmshdo{
+    box-shadow: 0px 7px 21px 0px #00000026;
+}
+.setheitslidr{
+    height: calc(100vh - 175px);
+}
+ .loginscren{
+    background-image: url("./assets/login.png");
+    background-position: center;
+    background-size: cover;
+
+ }
 .shados{
     box-shadow: 0px 7px 21px 0px #0000000D;
 }
-
+.registershdo{
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
 .heighttset{
     height: calc(100vh  - 115px);
 }
@@ -33,4 +47,16 @@ body{
     background-color: green;
     width: 7px;
     border-radius: 50px;
+}
+.swiper-pagination {
+    bottom: 25px !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #1CAC19;
+}
+.swiper-pagination-bullet{
+    padding: 8px;
+}
+.wlmscrshdo{
+    box-shadow: 0px 7px 21px 0px #00000026;
 }

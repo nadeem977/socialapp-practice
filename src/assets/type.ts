@@ -39,3 +39,8 @@ export interface PostType {
     time: string;
   }[];
 }
+
+export interface menuoptions{
+  option:string;
+  icon:React.ReactNode;
+}
