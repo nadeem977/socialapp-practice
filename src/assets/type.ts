@@ -44,3 +44,9 @@ export interface menuoptions{
   option:string;
   icon:React.ReactNode;
 }
+
+export interface communityItem {
+  title: string;
+  followers:number;
+  img:string;
+}
