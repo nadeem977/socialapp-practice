@@ -41,7 +41,7 @@ const WelcomeScreen: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen h-full w-full bg-[#F8F8F8] relative p-10 ">
+    <div className="min-h-screen h-full w-full bg-[#F8F8F8] relative p-5 2xl:p-10 ">
       <Swiper
         navigation={{
           prevEl: prevRef.current,
@@ -57,13 +57,13 @@ const WelcomeScreen: React.FC = () => {
       >
         <SwiperSlide className="setheitslidr mt-auto bg-white w-full grid grid-rows-2">
           <div className="bgimg h-full  flex items-center pl-10">
-            <div className=" text-white text-[55px] font-bold">
+            <div className=" text-white text-[25px] 2xl:text-[55px] font-bold">
               {" "}
               <h1>Welcome to</h1>
               <h1>Scribbes</h1>
             </div>
           </div>
-          <div className="flex flex-col gap-10 pt-5 pl-10 text-[18px] font-semibold">
+          <div className="flex flex-col gap-2 2xl:gap-10 pt-5 pl-10 text-[18px] ">
             <h1>
               Scribbes is the future of how we share infomation and chat on the
               internet.
@@ -81,12 +81,12 @@ const WelcomeScreen: React.FC = () => {
             <p>Lets get started!</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="setheitslidr">
           <div className="border-b-[2px] p-2 border-gray-400">
-            <h1 className="text-[45px] font-bold pl-10">Setup your profile</h1>
+            <h1 className="text-[25px] 2xl:text-[45px] font-bold pl-10">Setup your profile</h1>
           </div>
-          <div className="flex items-center flex-col justify-center gap-10 h-full w-full">
-            <p className="text-lg mt-10">
+          <div className="flex hetsset items-center flex-col justify-center gap-10 h-full w-full">
+            <p className="text-lg ">
               Upload an awesome profile picture. It helps people recognize you.
             </p>
             <div className="text-[#BCBCBC] text-[100px]">
@@ -104,18 +104,18 @@ const WelcomeScreen: React.FC = () => {
             <input type="file" id="image" className="hidden" />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="setheitslidr">
           <div className="border-b-[2px] p-2 border-gray-400">
-            <h1 className="text-[45px] font-bold pl-10">
+            <h1 className="text-[25px] 2xl:text-[45px] font-bold pl-10">
               Tell us about yourself
             </h1>
           </div>
-          <div className="flex items-center flex-col justify-center gap-10 h-full w-full p-2 mt-10">
+          <div className="flex hetsset items-center flex-col justify-center gap-10 h-full w-full p-2 ">
             <p>
               A good bio, serves as an introduction to anyone who visits your
               profile
             </p>
-            <div className="w-full max-w-[700px] relative">
+            <div className="w-full max-w-[700px]  ">
               <textarea
                 placeholder="Introduce yourself...."
                 className="w-full p-5 border-[2px] border-gray-400 resize-none outline-green rounded-[14px] h-[300px]"
@@ -124,28 +124,26 @@ const WelcomeScreen: React.FC = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="setheitslidr">
           <div className="border-b-[2px] p-2 border-gray-400">
-            <h1 className="text-[45px] font-bold pl-10">
+            <h1 className="text-[25px] 2xl:text-[45px] font-bold pl-10">
               Follow your desired Communities
             </h1>
           </div>
-          <div className="p-2 md:p-10">
+          <div className="p-2 md:p-10 hetsset">
             <p className="text-center text-[18px] mb-10">
               Scribbes gives you full control over what you want to see, read
               and converse with. Here are some featured topics you may like
             </p>
-            <div className="grid grid-cols-4 gap-4 2xl:gap-10">
+            <div className="grid grid-cols-2  lg:grid-cols-3 2xl:grid-cols-4 gap-4 2xl:gap-10">
               {comiunytys.map((item: communityItem, i: number) => (
                 <div
                   key={i}
-                  className="w-full h-full rounded-xl cmntshd bg-white flex items-center gap-5 p-5 cursor-pointer hover:bg-green hover:text-white transition-all"
-                >
+                  className="w-full h-full rounded-xl cmntshd bg-white flex items-center gap-5 p-5 cursor-pointer hover:bg-green hover:text-white transition-all">
                   <img
                     src={item.img}
                     alt="image"
-                    className="w-[75px] h-[75px] rounded-full object-cover"
-                  />
+                    className="w-[75px] h-[75px] rounded-full object-cover"/>
                   <span>
                     <h1 className="text-[25px] font-bold ">{item.title}</h1>
                     <p className="text-gray1 text-lg">
@@ -160,13 +158,13 @@ const WelcomeScreen: React.FC = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="setheitslidr">
           <div className="border-b-[2px] p-2 border-gray-400">
-            <h1 className="text-[45px] font-bold pl-10">
+            <h1 className="text-[25px] 2xl:text-[45px] font-bold pl-10">
               Start a conversation
             </h1>
           </div>
-          <div className="flex items-center justify-center flex-col mt-10 gap-10">
+          <div className="flex hetsset items-center justify-center flex-col  gap-10">
             <p>Make your first scribbe and start a conversation</p>
             <div className="w-full h-full border-[2px] border-gray1 rounded-[15px] p-4 max-w-[700px]">
               <div className="flex items-center gap-10">
