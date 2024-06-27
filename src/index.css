@@ -82,3 +82,7 @@ body{
     }
     
 }
+
+.MuiSelect-outlined{
+    padding: 0px !important;
+}

@@ -10,6 +10,8 @@ import { comiunytys } from "../assets/data";
 import { communityItem } from "../assets/type";
 import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
+import { FaLink } from "react-icons/fa6";
+import { GoFileMedia } from "react-icons/go";
 
 const WelcomeScreen: React.FC = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
@@ -164,7 +166,7 @@ const WelcomeScreen: React.FC = () => {
               Start a conversation
             </h1>
           </div>
-          <div className="flex hetsset items-center justify-center flex-col  gap-10">
+          <div className="flex hetsset items-center justify-center flex-col  gap-10" style={{paddingTop:"2rem"}}>
             <p>Make your first scribbe and start a conversation</p>
             <div className="w-full h-full border-[2px] border-gray1 rounded-[15px] p-4 max-w-[700px]">
               <div className="flex items-center gap-10">
@@ -177,23 +179,23 @@ const WelcomeScreen: React.FC = () => {
                 <Select
                   value={age}
                   onChange={handleChange}
-                  className="border-[1px] bg-white  border-green text-green  rounded-lg w-fit  hover:border-green focus:shadow-none">
+                  className="border-[1px] bg-white  border-green text-green p-0 rounded-lg w-[250px]  hover:border-green focus:shadow-none" style={{padding:0}}>
                      <MenuItem value="5">
                      <em>Choose Interest</em>
                   </MenuItem>
                   {comiunytys.map((item: communityItem, i: number) => (
                     <MenuItem key={i} value={item.followers}>
-                    <div className="w-fit h-fit rounded-xl cmntshd bg-white flex items-center gap-2 p-2 cursor-pointer hover:bg-green hover:text-white transition-all">
+                    <div className="w-full h-fit rounded cmntshd bg-white flex items-center gap-2 p-1 cursor-pointer hover:bg-green hover:text-white transition-all">
                       <img
                         src={item.img}
                         alt="image"
-                        className="w-[50px] h-[50px] rounded-full object-cover"
+                        className="w-[30px] h-[30px] rounded-full object-cover"
                       />
                       <span>
-                        <h1 className="text-[18px] font-bold ">
+                        <h1 className="text-[13px] font-semibold">
                           {item.title}
                         </h1>
-                        <p className="text-gray1 text-sm">
+                        <p className="text-gray1 text-xs">
                           {formatFollowers(
                             Math.floor(
                               Math.random() * (1023304 - 532 + 1)
@@ -206,6 +208,24 @@ const WelcomeScreen: React.FC = () => {
                   </MenuItem>
                   ))}
                 </Select>
+              </div>
+              <div className="border-b-[1px] ">
+                <textarea className="w-full p-2 min-h-[200px] h-full bg-transparent mt-3 outline-none" placeholder="Share your thoughts...."></textarea>
+                <div className="flex items-center justify-between"> 
+                  <div>
+                    <button>Scribbe</button>
+                     <span />
+                    <button>Blog</button>
+                  </div>
+                  <p>120/350</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-between mt-5">
+                <div className="flex items-center gap-5">
+                  <button className="flex items-center gap-1 p-2 px-3 rounded-full shadow-lg"><GoFileMedia className="text-green"/> Insert Media</button>
+                  <button className="flex items-center gap-1 p-2 px-3 rounded-full shadow-lg"><FaLink className="text-green"/> Insert URL</button>
+                </div>
+                <button className="p-2 w-[130px] font-semibold rounded-full bg-green text-white ">Post</button>
               </div>
             </div>
           </div>
