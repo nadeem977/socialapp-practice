@@ -50,3 +50,13 @@ export interface communityItem {
   followers:number;
   img:string;
 }
+
+export interface UserType {
+  name:string;
+  username:string;
+  profile:string;
+  followers:number;
+  following:number;
+  about:string;
+  communities: number;
+}

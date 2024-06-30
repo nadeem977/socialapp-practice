@@ -8,12 +8,12 @@ import { MdOutlineExplore } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
 import { BsSend } from "react-icons/bs";
 import { IoSettingsOutline } from "react-icons/io5";
-import { PostType, communityItem } from "./type";
+import { PostType, UserType, communityItem } from "./type";
 import { PiShareFatLight } from "react-icons/pi";
 import { MdOutlineEdit } from "react-icons/md";
 import { GoShareAndroid } from "react-icons/go";
 import { FaLink } from "react-icons/fa6";
-
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 export const SidebarData = [
     {
@@ -172,7 +172,10 @@ export const optionsmenu = [
     {
       option:"Copy Post URL",
       icon:<FaLink />,
-    },
+    },{
+        option:"Delete",
+        icon:<RiDeleteBin6Line/>
+    }
   ];
   
 export const comiunytys:communityItem[] = [
@@ -237,4 +240,16 @@ export const comiunytys:communityItem[] = [
         img:"https://s3-alpha-sig.figma.com/img/f8f3/bda1/7340103d6ea477209ed867a04bce43fc?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Okt-Rw9~nUQEx1NADerSfpUeZ3PExEYkRzfTMsJEOA5aC3OAH-oxEz7TDIiHahYBtK1XbZGkFr88PrGpFdRMWAI9TtxJUAmhjJHDeq4Hw2RkBLXzqQbhA1TGXsLpReGWYl8Zjg4PVlHzDiT68hw3sv2OLOcR1vgjZ4pAikrSii98NY-MMYEO8-LHC14i-n6cJ0r6b73wqYzJV7tGkzu3x4mYEhuJ96S5VnasSXFV10b7KFfXFNYkWlfal4kEtk2D-YQmOHm2Hyu2UoA04gcLWdIBy2oEeZ6cU6FPxl6oW9WIsrN7ySwwsBjzrjR2mF7MeaRm8A1txJR9vdeUrJp0tg__"
     },
 
+]
+
+export const UserProfile:UserType[] = [
+    {
+        name:"John Doe",
+        username:"@johnDoeUser",
+        followers:12323,
+        following:23452,
+        communities:232,
+        about:"This is my bio. This where you find about me and my Communities in life.  ⚽ Love Soccer and travelling",
+        profile:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyllrW-u-01_B8qMki4ybHzbhuBWhUq3pMA&s"
+    }
 ]

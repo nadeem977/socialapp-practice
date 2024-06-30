@@ -87,7 +87,7 @@ const WelcomeScreen: React.FC = () => {
           <div className="border-b-[2px] p-2 border-gray-400">
             <h1 className="text-[25px] 2xl:text-[45px] font-bold pl-10">Setup your profile</h1>
           </div>
-          <div className="flex hetsset items-center flex-col justify-center gap-10 h-full w-full">
+          <div className="flex hetsset items-center flex-col justify-center gap-10 w-full">
             <p className="text-lg ">
               Upload an awesome profile picture. It helps people recognize you.
             </p>
@@ -112,7 +112,7 @@ const WelcomeScreen: React.FC = () => {
               Tell us about yourself
             </h1>
           </div>
-          <div className="flex hetsset items-center flex-col justify-center gap-10 h-full w-full p-2 ">
+          <div className="flex hetsset items-center flex-col justify-center gap-10  w-full p-2 ">
             <p>
               A good bio, serves as an introduction to anyone who visits your
               profile
@@ -132,7 +132,7 @@ const WelcomeScreen: React.FC = () => {
               Follow your desired Communities
             </h1>
           </div>
-          <div className="p-2 md:p-10 hetsset">
+          <div className="p-2 md:p-10 hetsset flex flex-col items-center justify-center">
             <p className="text-center text-[18px] mb-10">
               Scribbes gives you full control over what you want to see, read
               and converse with. Here are some featured topics you may like
@@ -166,9 +166,9 @@ const WelcomeScreen: React.FC = () => {
               Start a conversation
             </h1>
           </div>
-          <div className="flex hetsset items-center justify-center flex-col  gap-10" style={{paddingTop:"2rem"}}>
+          <div className="flex hetsset items-center justify-center flex-col  gap-10">
             <p>Make your first scribbe and start a conversation</p>
-            <div className="w-full h-full border-[2px] border-gray1 rounded-[15px] p-4 max-w-[700px]">
+            <div className="w-full h-fit border-[2px] border-gray1 rounded-[15px] p-4 max-w-[700px]">
               <div className="flex items-center gap-10">
                 <img
                   src="https://s3-alpha-sig.figma.com/img/d4ba/b37c/728178de4853f36aef820d45f81e69e7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RELbPBZzIG10Ucokbj9KVhPGhDfMUd9vUUg7XHT2kwk4pxlj0-j2UjWf8j-94lygxXI6mJbKYDLANEEDi3bC52BpQO-evT6dXBF~7OY4It3oNdZJRcOSED4KK-rN5CCbGvBATXmYjw4W8C8x1TUZJoNgJ~OWTjy-~2x7wz-qq43FHD-7UNlq5sbpcxcDJwsHVIxaajwgmn2qDz5u1CgXEJQf3me3c1xvd4u1E6ipcxVJe0biu2ld1-Ak23oyJEbz7JCyQbBulASSetiXXA4V4rpDRvP7DpWfvJqSJhv4ZbOXId4ykqNzjoZIEX9dXHgPH9vU6afv8WNeUFgW1kERKQ__"

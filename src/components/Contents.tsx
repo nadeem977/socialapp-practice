@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { optionsmenu } from "../assets/data";
-
+import { useLocation } from "react-router-dom";
 
 
 const ITEM_HEIGHT = 48;
@@ -17,8 +17,10 @@ interface ContentsProps {
 }
 
 const Contents: React.FC<ContentsProps> = ({ postes }) => {
-  const [expandedComments, setExpandedComments] = useState<number | null>(null);
 
+
+  const [expandedComments, setExpandedComments] = useState<number | null>(null);
+  const location = useLocation().pathname
   const formatFollowers = (count: number) => {
     if (count < 1000) {
       return count.toString();
@@ -47,7 +49,7 @@ const Contents: React.FC<ContentsProps> = ({ postes }) => {
   };
   return (
     <>
-      <section className="w-full py-8 m-2 flex flex-col gap-10 heighttset overflow-auto">
+      <section className="w-full  flex flex-col gap-10">
         {postes.map((post: PostType, index: number) => (
           <div key={index} className="bg-white rounded p-5">
             <div className="flex items-center justify-between">
@@ -75,8 +77,7 @@ const Contents: React.FC<ContentsProps> = ({ postes }) => {
                   aria-controls={open ? "long-menu" : undefined}
                   aria-expanded={open ? "true" : undefined}
                   aria-haspopup="true"
-                  onClick={handleClick}
-                >
+                  onClick={handleClick}>
                   <MoreVertIcon />
                 </IconButton>
                 <Menu
@@ -93,15 +94,16 @@ const Contents: React.FC<ContentsProps> = ({ postes }) => {
                       width: "20ch",
                     },
                   }}>
-                  {optionsmenu.map((item:menuoptions,i:number) => (
-                    <MenuItem
-                      key={i}
-                      selected={item.option === "Pyxis"}
-                      onClick={handleClose}
-                      className="flex gap-4 items-center">
+                  {optionsmenu.map((item:menuoptions,i:number) => {
+                    
+                    return  <MenuItem
+                    key={i}
+                    selected={item.option === "Pyxis"}
+                    onClick={handleClose}
+                    className="flex gap-4 items-center">
                     {item.icon}  {item.option}
-                    </MenuItem>
-                  ))}
+                  </MenuItem>
+                  })}
                 </Menu>
               </div>
             </div>

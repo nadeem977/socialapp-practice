@@ -4,7 +4,7 @@ import Login from "./auth/Login";
 import Register from "./auth/Register";
 import WelcomPage from "./auth/WelcomPage";
 import WelcomScreen from "./auth/WelcomScreen";
-
+import Profile from "./pages/Profile";  
 
 const App = () => {
 
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/sign-in" element={<Login />} />
           <Route path="/welcome" element={<WelcomPage />} />
           <Route path="/sign-up" element={<Register />} />
+          <Route path="/Profile" element={<Profile />} />
           <Route path="/Welcom-Screen" element={<WelcomScreen />} />
         </Routes>
       </BrowserRouter>
