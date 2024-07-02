@@ -5,6 +5,11 @@ import Register from "./auth/Register";
 import WelcomPage from "./auth/WelcomPage";
 import WelcomScreen from "./auth/WelcomScreen";
 import Profile from "./pages/Profile";  
+import BlogPost from "./pages/BlogPost";
+import Notifications from "./pages/Notifications"; 
+
+
+
 
 const App = () => {
 
@@ -21,6 +26,8 @@ const App = () => {
           <Route path="/welcome" element={<WelcomPage />} />
           <Route path="/sign-up" element={<Register />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/BlogPost" element={<BlogPost />} />
+          <Route path="/notifications" element={<Notifications />} />
           <Route path="/Welcom-Screen" element={<WelcomScreen />} />
         </Routes>
       </BrowserRouter>

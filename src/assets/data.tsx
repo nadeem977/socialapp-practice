@@ -18,39 +18,48 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 export const SidebarData = [
     {
         title:"Home",
-        icon:<GoHome/>
+        icon:<GoHome/>,
+        link:"/"
     },
     {
         title:"Video",
-        icon:<MdSlowMotionVideo/>
+        icon:<MdSlowMotionVideo/>,
+        link:"/video"
     },
     {
         title:"Communities",
-        icon:<ComminunityIcon/>
+        icon:<ComminunityIcon/>,
+        link:"/communities"
     },
     {
         title:"Trending",
-        icon:<AiOutlineFire/>
+        icon:<AiOutlineFire/>,
+        link:"/trending"
     },
     {
         title:"Notifications",
-        icon:<GoBell/>
+        icon:<GoBell/>,
+        link:"/notifications"
     },
     {
         title:"Explore",
-        icon:<MdOutlineExplore/>
+        icon:<MdOutlineExplore/>,
+        link:"/explore"
     },
     {
         title:"Profile",
-        icon:<IoPersonOutline/>
+        icon:<IoPersonOutline/>,
+        link:"/profile"
     },
     {
         title:"Messages",
-        icon:<BsSend/>
+        icon:<BsSend/>,
+        link:"/messages"
     },
     {
         title:"Settings",
-        icon:<IoSettingsOutline/>
+        icon:<IoSettingsOutline/>,
+        liik:"/settings"
     },
 ]
 export const tranding = [
@@ -99,7 +108,6 @@ export const trandingvideos = [
         oscr:"https://s3-alpha-sig.figma.com/img/655c/f081/81d5246f80014b9138cd3908b0a3328f?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=InZHjVxZ55uP~5ckAw8rMyG5D8t3VTiQr~yAN0u5kadpM6ntAkpLI0NO7zJflaKC8Lr7guMTAxjlq3xs37b2mF2B-Z6VdgauwDYbaL5ZrZsP6pqpvICwtraVHTXd4pkmz2ee71UVe3espjDvVDEJeBVRaIbFEPm9bnBTUXaa4O8n6h3qsWikZfx5wb-K-opVyQjiqsbxDjpN~ZiwdoQisLbWnxTv37KL9V3O291WQI5iRorECHLqzvjotgmijX1RXidle2clQUHG8mKXH1sGNiUlMuoEA2RALykMOoxDP15CoajfpJGqxZolumRY3Jt7lyJAgUQWGdn4X9OdkiPFpg__"
       },
 ]
-
 export const postsdata: PostType[]  = [
     {
      profileimg:"https://s3-alpha-sig.figma.com/img/d4ba/b37c/728178de4853f36aef820d45f81e69e7?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o9eJBWcMg9ryP4hjj7KrNyKN~u8-8mVXtnRFUGJ2SkneJQCyW8KQXoBFglPse5Umq5s2NgLU4FHXQGuokoG~awLj75kfQfwmKsmkLAYWjcWj33u5Xez8xnLgQqxii5G0eoys6uiNlvdTFH1Qt6D0eD1KHddK4~2EfmbOn474eOutdfJWBCAP8wfOmFhaZzI9ugjJl3a44PBZMZBISdCbWC3I8D5bh1Cm3UAkwKK5U8qqkNiyNk9XUeL65cwWWzamqNjbnZJfBt2wqWCLs7kTZwr4qu90YQxt1g-m9f1RJ~ahKT9QSbYsfRXmpxv5r9VMvXoEwGNw1c~nlfc0jE-tyg__",
@@ -176,8 +184,7 @@ export const optionsmenu = [
         option:"Delete",
         icon:<RiDeleteBin6Line/>
     }
-  ];
-  
+];
 export const comiunytys:communityItem[] = [
     {
         title:"Crypto Currency",
@@ -242,14 +249,51 @@ export const comiunytys:communityItem[] = [
 
 ]
 
-export const UserProfile:UserType[] = [
+
+
+
+export const Notificationdata = [
+    {
+     img:[
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwGr2aIPK-dwKNXyC6q9kVtcSF0XHUNm_7Q&s",
+     ],                 
+     name:"Jimmy McGill",
+     sms:"followed you.",
+     post:null,
+     Commiunity:null
+    },
+    {
+        img:[
+           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwGr2aIPK-dwKNXyC6q9kVtcSF0XHUNm_7Q&s",
+           "https://www.google.com/imgres?q=profile%20images%20&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100072493364168&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fp%2FProfile-pic-for-girl-100072493364168%2F&docid=6DRI1_ZeDEdb-M&tbnid=2i-uZJ6N4h0J2M&vet=12ahUKEwjEt7CXp4iHAxWqzgIHHRlQEasQM3oECD0QAA..i&w=600&h=591&hcb=2&ved=2ahUKEwjEt7CXp4iHAxWqzgIHHRlQEasQM3oECD0QAA",
+           "https://www.google.com/imgres?q=profile%20images%20&imgurl=https%3A%2F%2Fshotkit.com%2Fwp-content%2Fuploads%2Fbb-plugin%2Fcache%2Fcool-profile-pic-matheus-ferrero-landscape-6cbeea07ce870fc53bedd94909941a4b-zybravgx2q47.jpeg&imgrefurl=https%3A%2F%2Fshotkit.com%2Fcool-profile-pictures%2F&docid=7X2aM4E4dK2D2M&tbnid=owccnJg1Ar4kEM&vet=12ahUKEwjEt7CXp4iHAxWqzgIHHRlQEasQM3oECB4QAA..i&w=829&h=580&hcb=2&ved=2ahUKEwjEt7CXp4iHAxWqzgIHHRlQEasQM3oECB4QAA"
+        ],                 
+        name:"",
+        sms:"Jimmy McGill and 3 others have liked your post ",
+        post:"This is how a post would like on the website, and it’s different from the template we normally use for the blog posts on this website. Either way thats how everything looks. Wow! 🔥🔥🔥",
+        tagdImg:"https://www.google.com/imgres?q=profile%20images%20&imgurl=https%3A%2F%2Fcdn.hero.page%2Fpfp%2Fdc89ab45-0912-4da3-b933-89a6bd6e5464-kawaii-chibi-boy-cute-anime-profile-pictures-for-boys-1.png&imgrefurl=https%3A%2F%2Fhero.page%2Fpfp%2Fanime-pfp-cute%2Fcute-anime-profile-pictures-for-boys&docid=xmleWm666msd4M&tbnid=kYBNflTtPAG1EM&vet=12ahUKEwjEt7CXp4iHAxWqzgIHHRlQEasQM3oECB0QAA..i&w=1024&h=1024&hcb=2&ved=2ahUKEwjEt7CXp4iHAxWqzgIHHRlQEasQM3oECB0QAA"
+       },
+       {
+        img:[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnwGr2aIPK-dwKNXyC6q9kVtcSF0XHUNm_7Q&s",
+         ],                 
+         name:"Jimmy McGill",
+         post:"Annoucing the first annual CODING COMPETITION 2022. All you web 3.0 enthusiasts join us.📍22 Some Block, Fairfax Ave, LA.🕛 10:00am",
+         sms:"posted to ",
+         commiunitys:"https://www.google.com/imgres?q=web%200.3&imgurl=https%3A%2F%2Fimages.shiksha.com%2Fmediadata%2FugcDocuments%2Fimages%2FwordpressImages%2F2022_02_Web-3.0.jpg&imgrefurl=https%3A%2F%2Fwww.shiksha.com%2Fonline-courses%2Farticles%2Fwhat-is-web3-and-why-does-it-matter%2F&docid=n-wuKYis8x_LdM&tbnid=eJl3fyjDySbvAM&vet=12ahUKEwj_6962qoiHAxXTVvEDHcxHCoUQM3oECBcQAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwj_6962qoiHAxXTVvEDHcxHCoUQM3oECBcQAA",
+       },
+]
+
+
+export const UserProfile = [
     {
         name:"John Doe",
         username:"@johnDoeUser",
         followers:12323,
         following:23452,
         communities:232,
-        about:"This is my bio. This where you find about me and my Communities in life.  ⚽ Love Soccer and travelling",
+        about:"This is my bio. This where you find about me and my Communities in life. Love Soccer and travelling",
         profile:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyllrW-u-01_B8qMki4ybHzbhuBWhUq3pMA&s"
     }
 ]
+
