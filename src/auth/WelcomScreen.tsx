@@ -12,19 +12,42 @@ import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { FaLink } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const WelcomeScreen: React.FC = () => {
+
+  const swiperRef = useRef<SwiperCore | null>(null);
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
+  const [activebtn, setActivebtn] = useState<boolean>(false);
+  const [islastbtn, setLastbtn] = useState<boolean>(false)
+  useEffect(() => {
+    if (swiperRef.current && prevRef.current && nextRef.current) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, []);
 
   useEffect(() => {
-    if (prevRef.current && nextRef.current) {
-      const swiperInstance = document.querySelector(".swiper")?.swiper;
-      swiperInstance.params.navigation.prevEl = prevRef.current;
-      swiperInstance.params.navigation.nextEl = nextRef.current;
-      swiperInstance.navigation.init();
-      swiperInstance.navigation.update();
+    const swiperInstance = swiperRef.current;
+
+    if (swiperInstance) {
+      swiperInstance.on("slideChange", () => {
+        if (swiperInstance.isEnd) {
+          console.log("This is the last page");
+          setLastbtn(true);
+          // Add your custom logic here
+        }
+      });
     }
+
+    return () => {
+      if (swiperInstance) {
+        swiperInstance.off("slideChange");
+      }
+    };
   }, []);
 
   const formatFollowers = (count: number) => {
@@ -42,9 +65,11 @@ const WelcomeScreen: React.FC = () => {
     setAge(event.target.value);
   };
 
+  
   return (
     <div className="min-h-screen h-full w-full bg-[#F8F8F8] relative p-5 2xl:p-10 ">
       <Swiper
+         onSwiper={(swiper) => (swiperRef.current = swiper)}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
@@ -55,8 +80,7 @@ const WelcomeScreen: React.FC = () => {
         keyboard={{ enabled: false }}
         mousewheel={{ forceToAxis: false }}
         modules={[Navigation, Pagination]}
-        className="mySwiper rounded-[20px] wlmscrshdo"
-      >
+        className="mySwiper rounded-[20px] wlmscrshdo">
         <SwiperSlide className="setheitslidr mt-auto bg-white w-full grid grid-rows-2">
           <div className="bgimg h-full  flex items-center pl-10">
             <div className=" text-white text-[25px] 2xl:text-[55px] font-bold">
@@ -212,10 +236,10 @@ const WelcomeScreen: React.FC = () => {
               <div className="border-b-[1px] ">
                 <textarea className="w-full p-2 min-h-[200px] h-full bg-transparent mt-3 outline-none" placeholder="Share your thoughts...."></textarea>
                 <div className="flex items-center justify-between"> 
-                  <div>
-                    <button>Scribbe</button>
-                     <span />
-                    <button>Blog</button>
+                <div className="border-2 relative border-green p-1    rounded-full flex items-center ">
+                    <button className={`p-2 rounded-full ${activebtn? "text-black":"text-white"} w-[80px]`} onClick={()=>setActivebtn(false)}>Scribbe</button>
+                     <span className={`bg-green absolute w-[50%] trans top-1  rounded-full bottom-1 -z-10`} style={{left:activebtn?"48%":"2%"}}/>
+                    <button className={`p-2 rounded-full ${activebtn?"text-white":"text-black"} w-[80px]`}onClick={()=>setActivebtn(true)}>Blog</button>
                   </div>
                   <p>120/350</p>
                 </div>
@@ -238,12 +262,13 @@ const WelcomeScreen: React.FC = () => {
           >
             Back
           </button>
+         {islastbtn ? <Link to="/" className="absolute right-5 bottom-5 bg-green rounded-full p-2 w-[100px] text-center text-white z-30">Home</Link>:
           <button
             ref={nextRef}
             className="custom-next-button absolute bottom-5 right-5 border-[1.5px] border-green text-green hover:bg-green hover:text-white w-[150px] py-2 z-20 rounded-full"
           >
             Continue
-          </button>
+          </button>}
         </div>
       </Swiper>
     </div>

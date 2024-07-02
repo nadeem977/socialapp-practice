@@ -41,7 +41,7 @@ const Feed = () => {
           <MenuItem value={22}>Blogs</MenuItem>
         </Select>
         </div>
-        <div className='heighttset  overflow-y-auto w-full py-8 m-2'>
+        <div className='heighttset  overflow-y-auto w-full py-8'>
         <Contents postes={postsdata}/>
         </div>
      </main>

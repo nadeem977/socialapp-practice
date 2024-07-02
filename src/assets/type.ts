@@ -8,6 +8,7 @@ export interface Tranddings {
 export interface SidebarItem {
     icon: React.ReactNode;
     title: string;
+    link?: string;
   }
   
 export interface TrandingVideos {
