@@ -229,7 +229,7 @@ export const comiunytys:communityItem[] = [
     {
         title:"Fitness",
         followers:90,
-        img:"https://s3-alpha-sig.figma.com/img/29ef/12a5/3064dfb557a5a5cf824e86a458aefb8a?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FjZuJK1YvIibL6uq3P~HQ0I3zFQpgWWrIJsqxSwFsIc3ERU6-wTCa70aMniJ2-K6iI6HrRHksdpKBQmn64qcuHbnoHzTSsXS7B-jcz3kj4yXUTukyWCy4SEhNxgW--l7qUIEBeGiKAA7WYGR-qiKjIRJJms8Ya7~JvtfBQicx8RLGqQ9pGtZuHBcgB~ETSLNkymHq95roXoB-vrZEHX1sEuwOgCaMP1chlHtKGXAIjMD1hPrh5e5jI5TLP~eFAa7m3qeXrPuBLlNKc6Vo8zRc~k6yD69Tz6NFfqIbb2XVoSxVC4hdKOvwD2r9sXtfKTBqnTn1wMxePpxsxXYzddXog__"
+        img:"https://www.google.com/imgres?q=fitness%20profile%20pic&imgurl=https%3A%2F%2Fwww.biosytech.com%2Fmedia%2F6590%2Ffitness.jpg&imgrefurl=https%3A%2F%2Fwww.biosytech.com%2Fhealth-packages%2Ffitness-profile%2F&docid=P0gEgzNEqpejGM&tbnid=b7jRYmcfEsbKAM&vet=12ahUKEwiYzf6T34qHAxWQRfEDHYvNC6YQM3oECBsQAA..i&w=600&h=400&hcb=2&ved=2ahUKEwiYzf6T34qHAxWQRfEDHYvNC6YQM3oECBsQAA"
     },
     {
         title:"Technology Memes",

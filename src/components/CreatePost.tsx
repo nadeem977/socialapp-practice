@@ -56,8 +56,7 @@ const CreatePost = () => {
                 <img
                   src="https://s3-alpha-sig.figma.com/img/d4ba/b37c/728178de4853f36aef820d45f81e69e7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RELbPBZzIG10Ucokbj9KVhPGhDfMUd9vUUg7XHT2kwk4pxlj0-j2UjWf8j-94lygxXI6mJbKYDLANEEDi3bC52BpQO-evT6dXBF~7OY4It3oNdZJRcOSED4KK-rN5CCbGvBATXmYjw4W8C8x1TUZJoNgJ~OWTjy-~2x7wz-qq43FHD-7UNlq5sbpcxcDJwsHVIxaajwgmn2qDz5u1CgXEJQf3me3c1xvd4u1E6ipcxVJe0biu2ld1-Ak23oyJEbz7JCyQbBulASSetiXXA4V4rpDRvP7DpWfvJqSJhv4ZbOXId4ykqNzjoZIEX9dXHgPH9vU6afv8WNeUFgW1kERKQ__"
                   alt="user"
-                  className="w-[50px] h-[50px] object-cover rounded-full"
-                />
+                  className="w-[50px] h-[50px] object-cover rounded-full"/>
 
                 <Select
                   value={age}

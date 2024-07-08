@@ -20,7 +20,7 @@ const RightBar = () => {
         </h1>
         <div className="flex flex-col gap-3 mt-5 p-3">
           {tranding.map((item: Tranddings, i: number) => (
-            <div
+             <div
               key={i}
               className="flex items-center cursor-pointer gap-3 justify-between p-3 bg-white rounded-lg trandshado">
               <div className="flex items-center gap-3">
