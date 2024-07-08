@@ -3,6 +3,8 @@ import SideBars from '../components/SideBars'
 import { BsArrowLeft } from 'react-icons/bs'
 
 const Notifications = () => {
+
+  
   return (
     <section className='flex'>
       <SideBars/>

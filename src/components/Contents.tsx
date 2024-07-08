@@ -20,7 +20,8 @@ const Contents: React.FC<ContentsProps> = ({ postes }) => {
 
 
   const [expandedComments, setExpandedComments] = useState<number | null>(null);
-  const location = useLocation().pathname
+  const location = useLocation().pathname;
+  
   const formatFollowers = (count: number) => {
     if (count < 1000) {
       return count.toString();
@@ -69,7 +70,6 @@ const Contents: React.FC<ContentsProps> = ({ postes }) => {
                   </p>
                 </span>
               </div>
-
               <div>
                 <IconButton
                   aria-label="more"
