@@ -19,7 +19,7 @@ const Profile = () => {
       return (count / 1000000).toFixed(1) + "M";
     }
   };
-  console.log(activeface);
+
   return (
     <section className="flex items-center">
       <SideBars />

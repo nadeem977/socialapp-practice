@@ -7,8 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { optionsmenu } from "../assets/data";
-import { useLocation } from "react-router-dom";
+import { optionsmenu } from "../assets/data"; 
 
 
 const ITEM_HEIGHT = 48;
@@ -20,7 +19,7 @@ const Contents: React.FC<ContentsProps> = ({ postes }) => {
 
 
   const [expandedComments, setExpandedComments] = useState<number | null>(null);
-  const location = useLocation().pathname;
+  
   
   const formatFollowers = (count: number) => {
     if (count < 1000) {

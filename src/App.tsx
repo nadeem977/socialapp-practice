@@ -7,7 +7,7 @@ import WelcomScreen from "./auth/WelcomScreen";
 import Profile from "./pages/Profile";  
 import BlogPost from "./pages/BlogPost";
 import Notifications from "./pages/Notifications"; 
-
+import ChatRoom from "./pages/ChatRoom";
 
 
 
@@ -27,6 +27,7 @@ const App = () => {
           <Route path="/sign-up" element={<Register />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/BlogPost" element={<BlogPost />} />
+          <Route path="/messages" element={<ChatRoom />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/Welcom-Screen" element={<WelcomScreen />} />
         </Routes>
