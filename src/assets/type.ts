@@ -61,3 +61,11 @@ export interface UserType {
   about:string;
   communities: number;
 }
+
+
+export interface UseronChat{
+  name: string;
+  img: string;
+  time: string;
+  message: string;
+}
