@@ -94,3 +94,16 @@ body{
 .MuiSelect-outlined{
     padding: 10px !important;
 }
+.radis{
+    border-radius: 30px 30px 30px 0px;
+    color: white;
+}
+.chathit{
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+.radis2{
+    border-radius: 30px 30px 0px 30px;
+    color: white;
+    background-color: #1CAC19;
+}
